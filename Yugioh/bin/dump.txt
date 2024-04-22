@@ -1,0 +1,76 @@
+              // Criando um Dragão Branco de Olhos Azuis
+        NormalMonster whiteDragon = new NormalMonster(
+            (short) 1,                           // Id
+            "Blue-Eyes White Dragon",           // Title
+            "This legendary dragon is a powerful engine of destruction.", // Text
+            3000,                               // Atk
+            2500,                               // Def
+            (byte) 8,                            // Level
+            "Light",                            // Attribute
+            "Dragon",                           // Type
+            false,                              // isDefending
+            false,                              // isFaceDown
+            false                               // specialSummonOnly
+        );
+
+        // Exibindo todas as características do Dragão Branco de Olhos Azuis
+        whiteDragon.displayCard();
+
+                // Criando uma carta de monstro de fusão com seus requisitos
+        FusionMonster darkPaladin = new FusionMonster(
+            (short) 3,                           // Id
+            "Dark Paladin",                     // Title
+            "A powerful fusion of Dark Magician and Buster Blader.", // Text
+            2900,                              // Atk
+            2400,                              // Def
+            (byte) 7,                           // Level
+            "Dark",                            // Attribute
+            "Spellcaster/Warrior",            // Type
+            false,                            // isDefending
+            false,                            // isFaceDown
+            new String[]{"Blue-Eyes White Dragon", "Dark Magician"} // Requirements
+        );
+
+        // Exibindo todas as características do monstro de fusão
+        darkPaladin.displayCard();
+
+                // Criando uma carta de monstro de efeito
+                EffectMonster darkMagician = new EffectMonster(
+                    (short) 2, // ID
+                    "Dark Magician", // Título
+                    "This is the mighty Dark Magician!", // Texto
+                    2500, // ATK
+                    2100, // DEF
+                    (byte) 7, // Nível
+                    "Dark", // Atributo
+                    "Spellcaster", // Tipo
+                    true, // Defendendo
+                    false, // Virada para baixo
+                    false // Special Summon Only
+                );
+        
+                // Exibindo a carta de monstro de efeito
+                darkMagician.displayCard();
+
+                        // Criando um Token padrão
+        Token token = new Token();
+
+        // Exibindo as características do Token
+        token.displayToken();
+
+         // Criando um monstro ritual
+         RitualMonster ritualMonster = new RitualMonster(
+            (short) 4,                          // Id
+            "Black Luster Soldier",             // Title
+            "A powerful warrior with incredible abilities.", // Text
+            3000,                              // Atk
+            2500,                              // Def
+            (byte) 8,                          // Level
+            "Light",                           // Attribute
+            "Warrior",                         // Type
+            false,                             // isDefending
+            false                              // isFaceDown
+        );
+
+        // Exibindo todas as características do monstro ritual
+        ritualMonster.displayCard();
