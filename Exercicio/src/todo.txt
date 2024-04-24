@@ -1,0 +1,54 @@
+Extra Extra task: usar somente o vim na hora de confecionar este código.
+algums atalhos do vim:
+HJKL- movimenta o cursor, as setas sao melhores.
+iIaA - edit code
+x- deleta o caractere
+r- sobrescreve o caractere
+[ ] Exercício – parte 1:
+
+[x] Classe Aluno:
+    - Variáveis de instância:
+      - nome (String, privado)
+      - matrícula (String, privado)
+      - disciplinas (ArrayList, privado)
+      - CRE (double, privado)
+    - Construtor:
+      - Recebe nome e matrícula
+    - Métodos:
+      - get e set para nome
+      - get e set para matrícula
+      - get e set para disciplinas
+      - get e set para CRE
+     *- Método para calcular o CRE do Aluno usando apenas disciplinas aprovadas e reprovadas
+
+[x] Classe Disciplina:
+    - Variáveis de instância:
+      - codigo (String, privado)
+      - nome (String, privado)
+      - nota1, nota2, nota3 (double, privado)
+      - media (double, privado)
+      - status (Enum, privado)
+      - Enum (Matriculado, Trancado, Aprovado, Reprovado)
+    - Construtor:
+      - Inicializa todas as notas com zero
+    - Métodos:
+      - get e set para codigo
+      - get e set para nome
+      - get e set para nota1
+      - get e set para nota2
+      - get e set para nota3
+      - get e set para media
+      - get e set para status
+      - Método para calcular a média do aluno por disciplina e apresentar
+       o status de aprovado (média >=7) e reprovado (média <7).
+
+[ ] Exercício – parte 2:
+
+[ ] Classe Principal:
+    - Método main implementado
+    - Criação de pelo menos duas disciplinas
+    - Instanciação da classe Scanner para receber entradas do usuário
+    - Instanciação de um objeto da classe Aluno
+    - Recebe do usuário o nome, matrícula, disciplina e notas de um aluno
+    - Envia os dados para o objeto da classe Aluno
+    - Exibe todos os dados do aluno em um relatório, incluindo status (aprovado, reprovado)
